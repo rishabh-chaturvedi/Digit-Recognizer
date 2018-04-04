@@ -1,0 +1,8 @@
+{
+  "name": "tensor",
+  "app_id": "d27aee20",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
