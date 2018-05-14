@@ -1,14 +1,58 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
     <ion-title>
-      Ionic Blank
+      Digit Recognizer
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <!-- <ion-input [(ngModel)]="InputTaken"></ion-input>
+  <button ion-button (click)="linearModelPredict(InputTaken)">Predict</button>
+
+  <h1>The predicted value is {{prediction}}</h1> -->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h3>Draw Here</h3>
+        <div class="wrapper">
+            <canvas drawable (newImage)="predict($event)" ></canvas><br>
+        </div>
+
+        <button ion-button class="btn btn-sm btn-warning" (click)="eraseButton()">Erase</button>
+
+    </div>
+    <div class="col-sm">
+        <h3>TensorFlow Prediction</h3>
+        <chart [data]="prediction"></chart>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h5 color="red">*IF ON A SLOW CONNECTION, WAIT!!!</h5>
+
+<!-- <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm">
+        <h1>Linear Model</h1>
+        
+          <h4>Predicted Value: <span class="badge badge-info">{{ prediction }}</span></h4>
+
+          <p>Basic TensorFlow linear regression model that was trained in the browser.</p>
+        
+          <hr>
+        
+          <input type="number" (change)="linearPrediction($event.target.value)" class="form-control" placeholder="enter any random numbner">
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <router-outlet></router-outlet> -->
+
+
 </ion-content>
+
