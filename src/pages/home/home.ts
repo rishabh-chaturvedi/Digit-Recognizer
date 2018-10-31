@@ -2,7 +2,6 @@ import { Component , ViewChild , ElementRef, Renderer } from '@angular/core';
 import { NavController, Platform } from 'ionic-angular';
 import * as tf from '@tensorflow/tfjs';
 import { tensor1d } from '@tensorflow/tfjs';
-// import { DrawableDirective } from './drawable.directive';
 import { DrawableDirective } from '../../directives/drawable/drawable';
 import { ChartComponent } from '../../components/chart/chart';
 import { rendererTypeName } from '@angular/compiler';
